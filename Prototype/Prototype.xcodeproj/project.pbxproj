@@ -13,6 +13,8 @@
 		AA7574DF28B21C5200363C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7574DE28B21C5200363C35 /* Assets.xcassets */; };
 		AA7574E228B21C5200363C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7574E028B21C5200363C35 /* LaunchScreen.storyboard */; };
 		AA7574EA28B2264200363C35 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7574E928B2264200363C35 /* FeedViewController.swift */; };
+		AA7574EC28B2278000363C35 /* FeedImageViewModel+ProtypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7574EB28B2278000363C35 /* FeedImageViewModel+ProtypeData.swift */; };
+		AA7574EE28B227F200363C35 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7574ED28B227F200363C35 /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AA7574E128B21C5200363C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7574E328B21C5200363C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7574E928B2264200363C35 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AA7574EB28B2278000363C35 /* FeedImageViewModel+ProtypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+ProtypeData.swift"; sourceTree = "<group>"; };
+		AA7574ED28B227F200363C35 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AA7574E028B21C5200363C35 /* LaunchScreen.storyboard */,
 				AA7574E328B21C5200363C35 /* Info.plist */,
 				AA7574E928B2264200363C35 /* FeedViewController.swift */,
+				AA7574EB28B2278000363C35 /* FeedImageViewModel+ProtypeData.swift */,
+				AA7574ED28B227F200363C35 /* FeedImageCell.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				AA7574D628B21C5100363C35 /* AppDelegate.swift in Sources */,
 				AA7574EA28B2264200363C35 /* FeedViewController.swift in Sources */,
+				AA7574EC28B2278000363C35 /* FeedImageViewModel+ProtypeData.swift in Sources */,
 				AA7574D828B21C5100363C35 /* SceneDelegate.swift in Sources */,
+				AA7574EE28B227F200363C35 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
