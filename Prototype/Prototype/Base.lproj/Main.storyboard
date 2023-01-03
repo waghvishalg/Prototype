@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7rf-ls-HPL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7rf-ls-HPL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,13 +22,13 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="2Vy-NY-psp">
-                            <rect key="frame" x="0.0" y="653" width="414" height="16"/>
+                            <rect key="frame" x="0.0" y="664" width="414" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="570" id="PRI-PI-Pnt" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="60.5" width="414" height="570"/>
+                                <rect key="frame" x="0.0" y="66" width="414" height="570"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PRI-PI-Pnt" id="0uP-li-Hvm">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
@@ -91,7 +92,7 @@
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-BA-mv5">
                                                     <rect key="frame" x="0.0" y="430" width="374" height="106"/>
-                                                    <mutableString key="text">Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption </mutableString>
+                                                    <string key="text">Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption Discrption </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -124,6 +125,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="KqE-Dd-fVD"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="ufT-gr-HXt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh" destination="LWT-T3-3yp" eventType="valueChanged" id="3Us-cn-jeo"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bln-e0-Fqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +142,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7rf-ls-HPL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2lm-Sb-c2e">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
